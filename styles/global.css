@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.QRCodes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+form label {
+  margin-top: 5px;
+  max-width: 200px;
+  font-weight: bold;
+}
+
+form input {
+  width: 50%;
+  max-width: 180px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.Start {
+  width: 100%;
+  padding-left: 5px;
+  height: 30px;
+  transition: all 0.2s ease;
+}
+
+.Start:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.Number {
+  width: 20%;
+  padding-left: 5px;
+  max-width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.Number:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 180px;
+  font-weight: bold;
+  height: 30px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: orange;
+}
+
+.QRContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-width: 320px;
+  margin-bottom: 10vh;
+  transition: all 0.5s ease;
+}
+
+.QR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  min-width: 290px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.QR:hover {
+  transform: scale(1.05);
+}
+
+.QR img {
+  border-radius: 4px;
+  margin-left: 3px;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 250px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.txt div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2px;
+}
+
+@media print {
+  .QR {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .Number {
+    display: none;
+  }
+
+  .Start {
+    display: none;
+  }
+
+  form button {
+    display: none;
+  }
+
+  form label {
+    display: none;
+  }
+}
